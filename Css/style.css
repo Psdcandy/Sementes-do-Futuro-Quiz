@@ -11,6 +11,10 @@
 .img{
 text-align: center;
 }
+.imagem{
+    max-width: 100%;
+    height: auto;
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg-color);
