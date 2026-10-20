@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Profissões - Feira de Profissões</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+
+    <!-- Botão de Explicação no Topo Direito -->
+    <button id="btnExplicacao" class="btn-explicacao">💡 Explicação</button>
+
+    <div class="container">
+        <h1>Feira de Profissões</h1>
+        <p class="subtitle">Responda às questões e descubra o seu perfil de afinidade com cada área!</p>
+
+        <!-- Banner de Ajuda do Modo Explicativo -->
+        <div id="bannerExplicacao" class="banner-explicacao" style="display: none;">
+            🔍 <strong>Modo Explicativo Ativado!</strong> Clique em qualquer pergunta abaixo para ver o código HTML, CSS e JS dela.
+        </div>
+
+        <form id="quizForm">
+            <!-- Pergunta 1 -->
+            <div class="question-block" data-id="q1">
+                <h3>1. Qual tipo de atividade atrai mais a sua curiosidade?</h3>
+                <label><input type="radio" name="q1" value="C" required> A) Projetar como as coisas funcionam por dentro, consertando e erguendo estruturas concretas.</label>
+                <label><input type="radio" name="q1" value="E"> B) Dar forma visual a ideias abstratas e emocionar pessoas através de expressões visuais ou sonoras.</label>
+                <label><input type="radio" name="q1" value="A"> C) Resolver quebra-cabeças lógicos e estruturar fluxos invisíveis de informação.</label>
+                <label><input type="radio" name="q1" value="G"> D) Observar o funcionamento dos ciclos naturais e investigar os segredos dos seres vivos e do planeta.</label>
+                <label><input type="radio" name="q1" value="B"> E) Cuidar diretamente do bem-estar físico e do equilíbrio de outras pessoas.</label>
+                <label><input type="radio" name="q1" value="D"> F) Coordenar estratégias para fazer projetos crescerem e alcançarem metas ambiciosas.</label>
+                <label><input type="radio" name="q1" value="F"> G) Investigar o comportamento humano e debater formas de melhorar o convívio em comunidade.</label>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div class="question-block" data-id="q2">
+                <h3>2. Qual desses desafios você gostaria de resolver?</h3>
+                <label><input type="radio" name="q2" value="D" required> A) Expandir o alcance de uma iniciativa e garantir que ela dê lucro e destaque.</label>
+                <label><input type="radio" name="q2" value="B"> B) Encontrar a raiz de problemas físicos ou biológicos para restaurar a vitalidade.</label>
+                <label><input type="radio" name="q2" value="F"> C) Mediar desentendimentos e construir pontes de diálogo entre diferentes opiniões.</label>
+                <label><input type="radio" name="q2" value="A"> D) Automatizar tarefas repetitivas para otimizar o tempo através de sistemas digitais.</label>
+                <label><input type="radio" name="q2" value="G"> E) Mitigar impactos causados no planeta e proteger recursos vitais para o futuro.</label>
+                <label><input type="radio" name="q2" value="C"> F) Fazer com que mecanismos complexos funcionem com o máximo de eficiência e precisão.</label>
+                <label><input type="radio" name="q2" value="E"> G) Criar narrativas e peças visuais que prendam a atenção e gerem forte identificação no público.</label>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div class="question-block" data-id="q3">
+                <h3>3. Em um trabalho em grupo, qual costuma ser o seu papel natural?</h3>
+                <label><input type="radio" name="q3" value="G" required> A) Trazer soluções voltadas para o reaproveitamento, impacto ecológico ou sustentabilidade.</label>
+                <label><input type="radio" name="q3" value="C"> B) Testar o que foi feito na prática, ajustar as peças e colocar a mão na massa.</label>
+                <label><input type="radio" name="q3" value="E"> C) Cuidar da estética, da apresentação visual e da forma como a ideia será mostrada.</label>
+                <label><input type="radio" name="q3" value="A"> D) Ficar responsável pela parte lógica, ferramentas digitais ou estruturação técnica.</label>
+                <label><input type="radio" name="q3" value="F"> E) Ouvir todo mundo, mediar conflitos e organizar as opiniões coletivas.</label>
+                <label><input type="radio" name="q3" value="B"> F) Ficar atento ao clima emocional e garantir que todos estejam confortáveis e seguros.</label>
+                <label><input type="radio" name="q3" value="D"> G) Assumir a liderança, dividir as tarefas e cobrar prazos de entrega.</label>
+            </div>
+
+            <!-- Pergunta 4 -->
+            <div class="question-block" data-id="q4">
+                <h3>4. Qual ambiente de trabalho mais combina com o seu estilo?</h3>
+                <label><input type="radio" name="q4" value="B" required> A) Um ambiente dinâmico focado em atendimento, cuidados diretos e suporte a pessoas.</label>
+                <label><input type="radio" name="q4" value="F"> B) Um espaço voltado para a troca de ideias, conversas profundas e impacto social direto.</label>
+                <label><input type="radio" name="q4" value="D"> C) Um ambiente corporativo ágil, focado em metas, reuniões e expansão de mercado.</label>
+                <label><input type="radio" name="q4" value="G"> D) Um cenário ao ar livre, laboratório natural, campo ou locais de pesquisa ambiental.</label>
+                <label><input type="radio" name="q4" value="A"> E) Um espaço focado em inovação digital, onde o trabalho flui através de telas e sistemas.</label>
+                <label><input type="radio" name="q4" value="C"> F) Um local prático, com ferramentas, maquinários, canteiros ou oficinas técnicas.</label>
+                <label><input type="radio" name="q4" value="E"> G) Um estúdio livre e criativo, rodeado por referências artísticas e equipamentos de produção.</label>
+            </div>
+
+            <!-- Pergunta 5 -->
+            <div class="question-block" data-id="q5">
+                <h3>5. O que mais traz sentido e motivação para você?</h3>
+                <label><input type="radio" name="q5" value="C" required> A) Ver um plano técnico sair do papel e se tornar algo físico, sólido e funcional.</label>
+                <label><input type="radio" name="q5" value="A"> B) Criar inovações que mudem a forma como as pessoas interagem com a tecnologia.</label>
+                <label><input type="radio" name="q5" value="G"> C) Descobrir como a natureza funciona e ajudar a proteger a biodiversidade.</label>
+                <label><input type="radio" name="q5" value="E"> D) Ver uma ideia abstrata ganhar vida e emocionar quem a consome.</label>
+                <label><input type="radio" name="q5" value="B"> E) Ver a melhora real na saúde e na qualidade de vida de alguém graças à sua intervenção.</label>
+                <label><input type="radio" name="q5" value="F"> F) Sentir que seu trabalho contribuiu para a harmonia e o desenvolvimento da sociedade.</label>
+                <label><input type="radio" name="q5" value="D"> G) Bater metas difíceis, negociar e ver resultados de crescimento palpáveis.</label>
+            </div>
+
+            <!-- Pergunta 6 -->
+            <div class="question-block" data-id="q6">
+                <h3>6. Se pudesse escolher um projeto prático, qual seria?</h3>
+                <label><input type="radio" name="q6" value="E" required> A) Produzir uma campanha de forte impacto visual que mexa com as emoções das pessoas.</label>
+                <label><input type="radio" name="q6" value="D"> B) Lançar do zero uma iniciativa comercial e estruturar sua operação.</label>
+                <label><input type="radio" name="q6" value="A"> C) Desenvolver uma ferramenta inteligente que otimize a rotina diária.</label>
+                <label><input type="radio" name="q6" value="C"> D) Projetar um mecanismo físico que reduza o desperdício de energia ou recursos.</label>
+                <label><input type="radio" name="q6" value="F"> E) Desenvolver uma ação comunitária para integrar grupos e melhorar o diálogo local.</label>
+                <label><input type="radio" name="q6" value="G"> F) Criar um sistema autossustentável de cultivo ou manejo de recursos naturais.</label>
+                <label><input type="radio" name="q6" value="B"> G) Criar um programa prático de orientação preventiva para o bem-estar integral.</label>
+            </div>
+
+            <!-- Pergunta 7 -->
+            <div class="question-block" data-id="q7">
+                <h3>7. Qual destas habilidades você mais gostaria de dominar no futuro?</h3>
+                <label><input type="radio" name="q7" value="F" required> A) Oratória, escuta ativa, facilitação social e resolução de impasses.</label>
+                <label><input type="radio" name="q7" value="G"> B) Técnicas de preservação ambiental, manejo ecológico e ciências da Terra.</label>
+                <label><input type="radio" name="q7" value="A"> C) Lógica de programação e construção de sistemas computacionais.</label>
+                <label><input type="radio" name="q7" value="E"> D) Domínio estético, captação de imagens e linguagem visual avançada.</label>
+                <label><input type="radio" name="q7" value="C"> E) Mecânica, eletrônica ou estruturação física avançada.</label>
+                <label><input type="radio" name="q7" value="F"> F) Estratégias de mercado, vendas, liderança e gestão de recursos.</label>
+                <label><input type="radio" name="q7" value="B"> G) Técnicas avançadas de atendimento, reabilitação e cuidados humanos.</label>
+            </div>
+
+            <button type="submit">Ver Meu Perfil de Afinidade</button>
+        </form>
+
+        <!-- Área onde o resultado será mostrado -->
+        <div id="result">
+            <h2>Seu Perfil de Afinidade por Área</h2>
+            <p class="result-subtitle">Veja a porcentagem de compatibilidade com cada ramo profissional:</p>
+            <div id="rankingList"></div>
+        </div>
+    </div>
+
+    <!-- Janela Modal do Modo Explicativo com Abas (HTML, CSS, JS) -->
+    <div id="modalExplicacao" class="modal">
+        <div class="modal-content">
+            <span id="fecharModal" class="close-btn">&times;</span>
+            <h3 id="modalTitulo">Título da Seção</h3>
+
+            <!-- Botões de Abas -->
+            <div class="modal-tabs">
+                <button class="tab-btn active" data-tab="html">📄 HTML</button>
+                <button class="tab-btn" data-tab="css">🎨 CSS</button>
+                <button class="tab-btn" data-tab="js">⚙️ JavaScript</button>
+            </div>
+
+            <!-- Conteúdo da Aba HTML -->
+            <div id="conteudo-html" class="tab-content active">
+                <div class="code-box"><pre><code id="modalCodigoHtml"></code></pre></div>
+                <div id="modalDescricaoHtml" class="explanation-text"></div>
+            </div>
+
+            <!-- Conteúdo da Aba CSS -->
+            <div id="conteudo-css" class="tab-content">
+                <div class="code-box"><pre><code id="modalCodigoCss"></code></pre></div>
+                <div id="modalDescricaoCss" class="explanation-text"></div>
+            </div>
+
+            <!-- Conteúdo da Aba JS -->
+            <div id="conteudo-js" class="tab-content">
+                <div class="code-box"><pre><code id="modalCodigoJs"></code></pre></div>
+                <div id="modalDescricaoJs" class="explanation-text"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Js/funcoes.js"></script>
+</body>
+</html>
