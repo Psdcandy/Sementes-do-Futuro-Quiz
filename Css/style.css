@@ -2,13 +2,15 @@
 :root {
     --bg-color: #f4f9f4;
     --card-bg: #ffffff;
-    --primary-color: #4caf50;
-    --primary-light: #e8f5e9;
+    --primary-color: #469196;
+    --primary-light: #cbd5b4;
     --primary-hover: #388e3c;
     --text-color: #333333;
     --border-color: #dcedc8;
 }
-
+.img{
+text-align: center;
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg-color);
@@ -41,6 +43,7 @@ h1 {
     color: var(--primary-color);
     margin-bottom: 8px;
     font-size: 24px;
+    font-family: hammersmith one, sans-serif;
 }
 
 p.subtitle {
@@ -78,6 +81,7 @@ label {
     transition: background 0.2s;
     font-size: 13px;
     line-height: 1.4;
+        text-align: start;
 }
 
 label:hover {
